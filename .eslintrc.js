@@ -4,15 +4,15 @@ module.exports = {
     es2021: true,
   },
   extends: ['airbnb-base',
-  //  'some-other-config-you-use',
-  //  'prettier'
+  "plugin:prettier/recommended"
   ],
   parserOptions: {
     ecmaVersion: 12,
     sourceType: 'module',
   },
+  "plugins": ["prettier"],
   rules: {
     indent: 'off',
-    no-plusplus: 'off',
+    "prettier/prettier": "error"
   },
 };
