@@ -19,7 +19,7 @@ const dzienMiesiacRok = () => {
         miesiac = data.getMonth();
     }
     
-    return`${dzien}:${miesiac}:${data.getFullYear()}`
+    return`${dzien}.${miesiac}.${data.getFullYear()}`
 
 }
 
@@ -51,7 +51,7 @@ const godzinaMinutaSekunda = () => {
         sekunda = data.getSeconds();
     }
 
-    return `${godzina}:${minuta}:${sekunda};`
+    return `${godzina}:${minuta}:${sekunda}`;
 }
 
 const wypiszPost = (nrPosta) => {
