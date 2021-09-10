@@ -1,0 +1,27 @@
+body {
+	color: white;
+	background-color: rgb(44, 43, 43);
+}
+
+#kontener {
+	background-color: rgb(66, 66, 66);
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 10px;
+}
+
+#inputNazwaUżytkownika {
+	margin-bottom: 10px;
+}
+
+.post {
+	background-color: rgb(3, 113, 216);
+	width: 890px;
+}
+
+.nazwaUzytkownika {
+	margin: 10px;
+	border-radius: 1px;
+	border: 1px solid rgb(233, 231, 228);
+}
