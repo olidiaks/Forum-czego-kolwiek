@@ -2,30 +2,29 @@ import {
 	koloryCzerwony,
 	koloryNiebieski,
 	koloryZielony,
-} from './tablicaKoloryRGB';
+} from './tablicaKoloryRGB.js';
 
 export const rgbKolor = (numerKoloru) => {
 	let kolor = 'rgb(';
 
-	if (koloryCzerwony.length <= numerKoloru + 20) {
-		kolor += `${koloryCzerwony[numerKoloru + 20 - koloryCzerwony.length]},`;
+	if (koloryCzerwony.length <= numerKoloru) {
+		kolor += `${koloryCzerwony[numerKoloru - koloryCzerwony.length]},`;
 	} else {
-		kolor += `${koloryCzerwony[numerKoloru + 20]},`;
+		kolor += `${koloryCzerwony[numerKoloru]},`;
 	}
 
-	if (koloryZielony.length <= numerKoloru + 11) {
-		kolor += `${koloryZielony[numerKoloru + 11 - koloryZielony.length]},`;
+	if (koloryZielony.length <= numerKoloru) {
+		kolor += `${koloryZielony[numerKoloru - koloryZielony.length]},`;
 	} else {
-		kolor += `${koloryZielony[numerKoloru + 11]},`;
+		kolor += `${koloryZielony[numerKoloru]},`;
 	}
 
-	if (koloryNiebieski.length <= numerKoloru + 4) {
-		kolor += `${
-			koloryNiebieski[numerKoloru + 4 - koloryNiebieski.length]
-		},`;
+	if (koloryNiebieski.length <= numerKoloru) {
+		kolor += `${koloryNiebieski[numerKoloru - koloryNiebieski.length]},`;
 	} else {
-		kolor += `${koloryNiebieski[numerKoloru + 4]},`;
+		kolor += koloryNiebieski[numerKoloru];
 	}
 
-	return kolor + ')';
+	kolor += ')';
+	return kolor;
 };
