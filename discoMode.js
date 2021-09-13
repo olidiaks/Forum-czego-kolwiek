@@ -1,5 +1,5 @@
 import { czyDiscoZostaloNapisane } from './czyDiscoZostaloWpisane.js';
-import { koloryZielony } from './tablicaKoloryRGB.js';
+import { koloryCzerwony } from './tablicaKoloryRGB.js';
 import { zmienKolorTla } from './zmianaKoloruTla.js';
 
 export const discoMode = (key) => {
@@ -7,7 +7,7 @@ export const discoMode = (key) => {
 		let i = 0;
 		setInterval(() => {
 			i++;
-			if (koloryZielony.length <= i) {
+			if (koloryCzerwony.length <= i) {
 				i = 0;
 			}
 			zmienKolorTla(i);
