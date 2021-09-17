@@ -5,6 +5,7 @@ body {
 }
 
 #kontener {
+	border-radius: 3px;
 	background-color: rgb(66, 66, 66);
 	width: 900px;
 	margin-left: auto;
